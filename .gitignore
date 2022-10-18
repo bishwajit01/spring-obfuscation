@@ -1,0 +1,8 @@
+**/target/
+.idea/
+.vscode/
+HELP.md
+obfuscation.iml
+mvnw
+.mvn/
+mvnw.cmd
