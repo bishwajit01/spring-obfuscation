@@ -8,9 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/healthcheck")
 public class ObfuscationController {
 
+    public static final String HEALTH_CHECK_RESPONSE = "OK";
+
     @GetMapping
     public String healthCheck() {
         System.out.println("Executing Health Check !!!!!!");
-        return "OK";
+        return HEALTH_CHECK_RESPONSE;
     }
 }
