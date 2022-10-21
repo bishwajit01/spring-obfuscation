@@ -58,10 +58,10 @@
 
 	<build>
 		<plugins>
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
+			</plugin> -->
 			<plugin>
 				<groupId>com.github.wvengen</groupId>
 				<artifactId>proguard-maven-plugin</artifactId>
@@ -82,8 +82,8 @@
 					<proguardInclude>proguard.cfg</proguardInclude>
 					<libs>
 						<lib>${java.home}/lib/rt.jar</lib>
-						<!-- <lib>${java.home}/lib/jce.jar</lib>
-						<lib>${java.home}/lib/jsse.jar</lib> -->
+						<lib>${java.home}/lib/jce.jar</lib>
+						<lib>${java.home}/lib/jsse.jar</lib>
 					</libs>
 				</configuration>
 				<dependencies>
